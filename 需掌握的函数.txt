@@ -1,0 +1,30 @@
+﻿strings包
+
+strconv包
+i,_ := strconv.ParseInt(string(data),10,64)
+s := strconv.FormatInt(i,2)
+
+
+sort包
+sort.Strings(strList)
+sort.Ints(rList) //比冒泡快
+
+q16动态规划
+
+reader := bufio.NewReader(os.Stdin)
+    for {
+        line, err := reader.ReadString('\n')
+        if err != nil {
+            return
+        }
+        lines := strings.Split(line, ";")
+}
+
+ascii码值：大写字母65~90，小写字母97~122
+q20:输出不对记得continue与break
+
+不要轻易定长数组
+var rList []int
+var tempList = make([]int,rlen)
+
+使用：fmt.Scan(&ilen) 而不是fmt.Scanf("%d",ilen)，后者有unexpected newline保错
